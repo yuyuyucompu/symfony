@@ -1,0 +1,412 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>新康网校</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="新康网校"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="assets/css/amazeui.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<!--top-->
+<div class="am-g bg-grey">
+  <div class="am-container">
+    <p class="font-green am-padding-vertical-xs am-text-right am-text-sm">
+	  <span class="am-margin-right-xs"><img src="images/ico_01.jpg"></span>全国咨询热线：4008-168-679
+	</p>
+  </div>
+</div>
+<!--header-->
+<div class="am-g bg-black">
+  <div class="am-container">
+    <header class="am-topbar">
+      <div class="am-topbar-brand am-padding-left-0">
+        <a href="##"><img src="images/logo.jpg"></a>
+      </div>
+
+      <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+
+      <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+          <li class="am-active"><a href="##">首页</a></li>
+          <li><a href="##">课程中心</a></li>
+          <li><a href="##">在线题库</a></li>
+	      <li><a href="##">个人中心</a></li>
+        </ul>
+
+        <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
+	      <div class="am-input-group am-input-group-sm">
+            <input type="text" class="am-form-field">
+		    <span class="am-input-group-btn">
+              <button class="am-btn am-btn-default" type="button">
+		        <span class="am-icon-search"></span>
+		      </button>
+            </span>
+          </div>
+        </form>
+
+        <div class="am-topbar-right">
+          <a href="##">登录</a>｜<a href="##">注册</a>
+        </div>
+
+        <div class="am-topbar-right am-margin-right-sm">
+          <button class="am-btn am-btn-sm bg-black am-topbar-btn am-icon-qq font-green am-padding-xs"></button>
+	      <button class="am-btn am-btn-sm bg-black am-topbar-btn am-icon-user font-green am-padding-xs"></button>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+<div class="am-g bg_03">
+  <div class="am-container am-margin-vertical-xl">
+    <div class="am-u-md-9">
+	  <!--筛选-->
+	  <div class="am-u-sm-12 bg-white border-top-green-4">
+	    <div class="theme-popover am-cf">														
+		  <ul class="select am-cf">
+			<li class="select-result am-cf">
+			  <dl>
+				<dt class="am-badge am-round">已选：</dt>
+				<dd class="select-no"></dd>
+			    <p class="eliminateCriteria">清除</p>
+			  </dl>
+		    </li>
+		    <li class="select-list am-cf">
+		      <dl id="select1">
+				<dt class="am-badge am-round">专业：</dt>	
+				<div class="dd-conent">										
+				  <dd class="select-all selected"><a href="#">全部</a></dd>
+				  <dd><a href="#">会展管理</a></dd>
+				  <dd><a href="#">项目管理</a></dd>
+				  <dd><a href="#">人力资源管理</a></dd>
+				  <dd><a href="#">会计学</a></dd>
+				</div>
+			  </dl>
+			</li>
+			<li class="select-list am-cf">
+			  <dl id="select2">
+				<dt class="am-badge am-round">科目：</dt>
+				  <div class="dd-conent">
+					<dd class="select-all selected"><a href="#">全部</a></dd>
+					<dd><a href="#">会展</a></dd>
+					<dd><a href="#">策划</a></dd>
+					<dd><a href="#">人力资源</a></dd>
+					<dd><a href="#">会计</a></dd>
+				  </div>
+			  </dl>
+			</li>
+			<li class="select-list am-cf">
+			  <dl id="select3">
+				<dt class="am-badge am-round">类型：</dt>
+				<div class="dd-conent">
+				  <dd class="select-all selected"><a href="#">全部</a></dd>
+				  <dd><a href="#">课件</a></dd>
+				  <dd><a href="#">视频</a></dd>
+				  <dd><a href="#">直播</a></dd>
+				</div>
+			  </dl>
+			</li>
+            <li class="select-list am-cf">
+              <dl id="select4">
+                <dt class="am-badge am-round">章节：</dt>
+                <div class="dd-conent">
+                  <dd class="select-all selected"><a href="#">全部</a></dd>
+                  <dd><a href="#">第一章</a></dd>
+                  <dd><a href="#">第二章</a></dd>
+                  <dd><a href="#">第三章</a></dd>
+                </div>
+              </dl>
+            </li>       
+		  </ul>
+        </div>
+	  </div>
+	  <!--列表-->
+	  <div class="am-u-sm-12 bg-white border-top-green-4 am-margin-top-lg">
+	  <div class="am-u-sm-12 am-padding-horizontal-0 am-padding-vertical-sm border-bottom">
+	    <div class="am-u-sm-6 am-padding-horizontal-0 am-text-sm am-padding-top-sm">
+		  <p class="font-grey-2">类型<a href="##" class="am-margin-left">价格</a><a href="##" class="am-margin-left">热门</a><a href="##" class="am-margin-left">刷新</a></p>
+		</div>
+		<div class="am-u-sm-6 am-padding-horizontal-0">
+		  <form class="am-form-inline am-text-right" role="search">
+	        <div class="am-input-group am-input-group-sm">
+              <input type="text" class="am-form-field">
+		      <span class="am-input-group-btn">
+                <button class="am-btn am-btn-default" type="button">
+		          <span class="am-icon-search"></span>
+		        </button>
+              </span>
+            </div>
+          </form>
+		</div>
+	  </div>
+	  <div class="am-u-sm-12 am-padding-top-sm am-padding-horizontal-0">
+	    <a class="font-green am-text-xl border-bottom-green">零基础</a>
+	    <ul class="am-avg-md-3 am-avg-sm-1 am-thumbnails am-margin-top" style="list-style:none;">
+		  <li class="am-fl">
+	        <a href="##" target="_blank">
+	          <img src="images/pic_01.jpg" class="am-img-responsive">
+		      <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		      <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		    </a>
+	      </li>
+		  <li class="am-fl">
+	        <a href="##" target="_blank">
+	          <img src="images/pic_01.jpg" class="am-img-responsive">
+		      <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		      <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		    </a>
+	      </li>
+		  <li class="am-fl">
+	        <a href="##" target="_blank">
+	          <img src="images/pic_01.jpg" class="am-img-responsive">
+		      <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		      <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		    </a>
+	      </li>
+		  <li class="am-fl">
+	        <a href="##" target="_blank">
+	          <img src="images/pic_01.jpg" class="am-img-responsive">
+		      <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		      <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		    </a>
+	      </li>
+		  <li class="am-fl">
+	        <a href="##" target="_blank">
+	          <img src="images/pic_01.jpg" class="am-img-responsive">
+		      <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		      <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		    </a>
+	      </li>
+		  <li class="am-fl">
+	        <a href="##" target="_blank">
+	          <img src="images/pic_01.jpg" class="am-img-responsive">
+		      <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		      <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		    </a>
+	      </li>
+		  <li class="am-fl">
+	        <a href="##" target="_blank">
+	          <img src="images/pic_01.jpg" class="am-img-responsive">
+		      <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		      <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		    </a>
+	      </li>
+		  <li class="am-fl">
+	        <a href="##" target="_blank">
+	          <img src="images/pic_01.jpg" class="am-img-responsive">
+		      <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		      <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		    </a>
+	      </li>
+		  <li class="am-fl">
+	        <a href="##" target="_blank">
+	          <img src="images/pic_01.jpg" class="am-img-responsive">
+		      <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		      <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		    </a>
+	      </li>
+		</ul>
+	  </div>
+	  </div>
+	  <div class="am-u-sm-12 am-padding-top-sm am-padding-horizontal-0">
+	    <ul class="am-pagination am-pagination-centered">
+          <li class="am-disabled"><a href="#">&laquo;</a></li>
+          <li class="am-active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">&raquo;</a></li>
+        </ul>
+	  </div>
+	</div>
+	<!--猜你想学-->
+	<div class="am-u-md-3 ">
+	  <div class="am-u-sm-12 bg-white border-top-green-4">
+	    <div class="am-u-sm-12 am-padding-horizontal-0 am-padding-top-lg">
+		  <p class="am-fl am-text-xl">猜你想学</p>
+		</div>
+		<div class="am-u-sm-12 am-padding-horizontal-0 am-padding-vertical">
+		<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider="{itemWidth: 364, itemMargin: 5, slideshow: false,directionNav: false,}">
+		  <ul class="am-slides">
+		    <li class="am-cf">
+			 <div class="am-u-sm-12 am-padding-horizontal-0 am-padding-vertical-0">
+		       <ul style="list-style:none;">
+		          <li class="am-margin-bottom-sm">
+	                <a href="##" target="_blank">
+	                  <img src="images/pic_01.jpg" class="am-img-responsive">
+		              <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		              <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		            </a>
+	              </li>
+			      <li class="am-margin-bottom-sm">
+	                <a href="##" target="_blank">
+	                  <img src="images/pic_01.jpg" class="am-img-responsive">
+		              <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		              <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		            </a>
+	              </li>
+			      <li class="am-margin-bottom-sm">
+	                <a href="##" target="_blank">
+	                  <img src="images/pic_01.jpg" class="am-img-responsive">
+		              <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		              <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		            </a>
+	              </li>
+			      <li class="am-margin-bottom-sm">
+	                <a href="##" target="_blank">
+	                  <img src="images/pic_01.jpg" class="am-img-responsive">
+		              <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		              <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		            </a>
+	              </li>
+		        </ul>
+		      </div>
+		    </li>
+			<li class="am-cf">
+			 <div class="am-u-sm-12 am-padding-horizontal-0 am-padding-vertical-0">
+		       <ul style="list-style:none;">
+		          <li class="am-margin-bottom-sm">
+	                <a href="##" target="_blank">
+	                  <img src="images/pic_01.jpg" class="am-img-responsive">
+		              <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		              <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		            </a>
+	              </li>
+			      <li class="am-margin-bottom-sm">
+	                <a href="##" target="_blank">
+	                  <img src="images/pic_01.jpg" class="am-img-responsive">
+		              <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		              <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		            </a>
+	              </li>
+			      <li class="am-margin-bottom-sm">
+	                <a href="##" target="_blank">
+	                  <img src="images/pic_01.jpg" class="am-img-responsive">
+		              <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		              <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		            </a>
+	              </li>
+			      <li class="am-margin-bottom-sm">
+	                <a href="##" target="_blank">
+	                  <img src="images/pic_01.jpg" class="am-img-responsive">
+		              <p class="am-padding-vertical-xs am-text-truncate"><span class="border-all am-padding-xxs am-margin-right-xs font-green">网课</span>自考-马克思主义基本原理概论</p>
+		              <p class="am-padding-vertical-0 font-orange font-bold">¥99.90<del class="font-grey font-normal am-margin-left-sm">¥299.00</del></p>
+		            </a>
+	              </li>
+		        </ul>
+		      </div>
+		    </li>
+		  </ul>
+		</div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+<!--footer-->
+<div class="am-g bg-grey-2 am-hide-sm-only">
+  <div class="am-container">
+    <div class="am-u-md-7 am-padding-vertical-xxl">
+	  <ul class="am-avg-md-4" style="list-style:none;">
+	    <li>
+		  <p class="font-white">学院概况</p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">学院简介</a></p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">院长介绍</a></p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">学院荣誉</a></p>
+		</li>
+		<li>
+		  <p class="font-white">学员须知</p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">成人自考本科</a></p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">上课方式</a></p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">通过率如何保障</a></p>
+		</li>
+		<li>
+		  <p class="font-white">学员服务</p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">发票制度</a></p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">退课说明</a></p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">问题反馈</a></p>
+		</li>
+		<li>
+		  <p class="font-white">关于新康</p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">关于我们</a></p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">联系我们</a></p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">合作院校</a></p>
+		  <p class="am-text-sm"><a href="##" class="font-grey-2">商务合作</a></p>
+		</li>
+	  </ul>
+	</div>
+	<div class="am-u-md-2 bg-grey-3 am-padding-horizontal am-padding-bottom-xl shadow">
+	  <p class="font-white am-text-sm am-margin-top-xl">咨询热线<span class="font-grey-2">（9:00-19:00）</span></p>
+	  <p class="font-white am-text-sm"><span class="am-margin-right-xs"><img src="images/ico_03.jpg"></span>4008-168-679</p>
+	  <p class="font-white am-text-sm am-margin-top">在线客服</p>
+	  <p class="font-white am-text-sm"><span class="am-margin-right-xs"><img src="images/ico_04.jpg"></span><a href="##" target="_blank" class="am-round btn-1">在线咨询</a></p>
+	  <p class="font-white am-text-sm am-padding-bottom-lg"><span class="am-margin-right-xs"><img src="images/ico_05.jpg"></span>ad@shxkxy.com</p>
+	</div>
+	<div class="am-u-md-3 am-text-center am-margin-top-lg">
+	  <img src="images/wx.jpg">
+	  <p class="am-text-sm font-grey-2">扫码添加公众号</p>
+	  <p class="am-text-sm font-grey-2">获取最新课程信息和优惠！</p>
+	</div>
+  </div>
+</div>
+<div class="am-g bg-grey-4 am-padding-vertical">
+  <div class="am-container am-text-center am-text-sm font-grey-2">
+    <p>
+	  <span class="am-margin-right-sm">地址：上海市普陀区中山北路3553号伸大厦24楼</span>
+	  <span class="am-margin-right-sm">电话：4008-168-679</span>
+	  <span class="am-margin-right-sm">邮编：200062</span>
+	</p>
+	<p>
+	  <span class="am-margin-right-sm">Copyright © 2017</span>
+	  <a class="font-grey-2 am-margin-right-sm" href="http://www.miitbeian.gov.cn" target="_blank">沪ICP备13039508号-1</a>
+	  <span class="am-margin-right-sm">上海新康进修学院</span>
+	  <span class="am-margin-right-sm">版权所有</span>
+	</p>
+  </div>
+</div>
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
